@@ -16,4 +16,31 @@ const navbarLinks = [
   { id: 4, title: "About", href: "/about" },
 ];
 
-export { brand, navbarLinks };
+const donationProcess = [
+  {
+    id: 1,
+    title: "Signup as donor",
+    description:
+      "Signup as a donor on vein.com. Your account will be listed on donors list after registration.",
+  },
+  {
+    id: 2,
+    title: "Update profile and contact info",
+    description:
+      "Update your profile and contact info with up to date data. So that needy can contact you.",
+  },
+  {
+    id: 3,
+    title: "Get call or message",
+    description:
+      "Victim or needy will contact with you over given contact info.",
+  },
+  {
+    id: 4,
+    title: "Go to the place and donate",
+    description:
+      "Victim or needy will describe you the location and the problem. You can go there and donate.",
+  },
+];
+
+export { brand, navbarLinks, donationProcess };

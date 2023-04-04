@@ -10,8 +10,8 @@ function Navlink({ href, title }) {
     <li>
       <Link
         href={href}
-        className={`font-semibold hover:text-red-600 ${
-          pathName === href && "text-red-500 border-b-2 border-red-500"
+        className={`font-semibold text-sm md:text-base hover:text-red-600 ${
+          pathName === href && "text-red-500 border-b-2 border-red-400"
         }`}
       >
         {title}
