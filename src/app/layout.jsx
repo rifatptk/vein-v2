@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
           <header>
             <Navbar />
           </header>
-          <main>{children}</main>
+          <div>{children}</div>
         </QueryWrapper>
       </body>
     </html>

@@ -1,9 +1,7 @@
 "use client";
 import Image from "next/image";
-import React from "react";
-import IconButton from "../buttons/RiButton";
-import RiButton from "../buttons/RiButton";
 import { useRouter } from "next/navigation";
+import RiButton from "../buttons/RiButton";
 
 function Hero() {
   const router = useRouter();
