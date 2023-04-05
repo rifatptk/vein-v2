@@ -21,7 +21,7 @@ function DonorsList() {
       <h1 className="mb-5">
         Donors are real life <span className="text-red-500">Heros!</span>
       </h1>
-      <DataTable cols={cols} data={data?.users} />
+      <DataTable cols={cols} data={data?.users} isLoading={isLoading} />
     </section>
   );
 }

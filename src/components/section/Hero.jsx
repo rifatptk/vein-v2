@@ -6,7 +6,7 @@ import RiButton from "../buttons/RiButton";
 function Hero() {
   const router = useRouter();
   function gotoSignup() {
-    router.push("/donors/signup");
+    router.push("/signup");
   }
   return (
     <section className="rounded-ss-full bg-gray-200 pt-24 md:pt-0">

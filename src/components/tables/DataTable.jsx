@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import Loader from "../loaders/Loader";
 
-function DataTable({ cols, data = [] }) {
+function DataTable({ cols, data = [], isLoading }) {
+  if (isLoading) return <Loader />;
   return (
     <section className="container px-4 mx-auto">
       <div className="sm:flex sm:items-center sm:justify-between">
@@ -19,7 +21,7 @@ function DataTable({ cols, data = [] }) {
         <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
             <div className="overflow-hidden border border-gray-200  md:rounded-lg">
-              <table className="min-w-full divide-y divide-gray-200 ">
+              <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50 ">
                   <tr>
                     {cols.map((col) => (
@@ -44,6 +46,7 @@ function DataTable({ cols, data = [] }) {
                             alt={user.firstName}
                             width={100}
                             height={100}
+                            priority={true}
                             className="w-14 h-14 rounded-full object-cover border"
                           />
                           <span className="font-semibold  text-sm">

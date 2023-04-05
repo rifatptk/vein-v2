@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import Hero from "@/components/section/Hero";
 import DonationProcess from "@/components/section/DonationProcess";

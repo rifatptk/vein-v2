@@ -14,7 +14,7 @@ const brand = {
 const navbarLinks = [
   { id: 1, title: "Home", href: "/" },
   { id: 2, title: "Donors", href: "/donors" },
-  { id: 3, title: "Be a donor", href: "/donors/sign-up" },
+  { id: 3, title: "Be a donor", href: "/signup" },
   { id: 4, title: "About", href: "/about" },
 ];
 
