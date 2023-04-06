@@ -21,39 +21,12 @@ function DonorDetail({ params }) {
   return (
     <main className="container pt-24">
       <div className="">
-        <div className="w-full bg-main-color">
-          <div className="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-            <div className="p-4 flex flex-row items-center justify-between">
-              <a
-                href="#"
-                className="text-lg font-semibold tracking-widest uppercase rounded-lg focus:outline-none focus:shadow-outline"
-              >
-                {`${data.firstName} ${data.lastName}'s`} profile
-              </a>
-              <button className="md:hidden rounded-lg focus:outline-none focus:shadow-outline">
-                <svg
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  className="w-6 h-6"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                    clipRule="evenodd"
-                  />
-                  <path
-                    fillRule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
+        <h3 className="text-lg font-semibold tracking-widest uppercase rounded-lg focus:outline-none focus:shadow-outline">
+          {`${data.firstName} ${data.lastName}'s`} profile
+        </h3>
 
-        <div className="container mx-auto my-5 p-5">
-          <div className="md:flex no-wrap md:-mx-2 ">
+        <div className="my-5 py-5">
+          <div className="md:flex no-wrap gap-4 ">
             {/* Left Side */}
             <div className="w-full md:w-3/12 md:mx-2 border">
               {/* Profile Card */}
@@ -101,7 +74,7 @@ function DonorDetail({ params }) {
               <div className="my-4" />
             </div>
             {/* Right Side */}
-            <div className="w-full md:w-9/12 mx-2 h-64 ">
+            <div className="w-full md:w-9/12 h-64 ">
               {/* About Section */}
               <div className="bg-white p-3 shadow-sm rounded-sm">
                 <div className="flex items-center space-x-2 font-semibold text-gray-900 leading-8">
