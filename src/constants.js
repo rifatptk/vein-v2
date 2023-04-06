@@ -45,4 +45,12 @@ const donationProcess = [
   },
 ];
 
-export { brand, navbarLinks, donationProcess };
+const donorsListCols = [
+  { id: 1, header: "Donor" },
+  { id: 2, header: "Blood group" },
+  { id: 3, header: "Address" },
+  { id: 4, header: "Phone" },
+  { id: 5, header: <span className="sr-only">Action</span> },
+];
+
+export { brand, navbarLinks, donationProcess, donorsListCols };

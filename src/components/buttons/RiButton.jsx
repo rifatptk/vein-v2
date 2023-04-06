@@ -1,9 +1,10 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
-function RiButton({ text, className, onClick }) {
+function RiButton({ type = "button", text, className, onClick }) {
   return (
     <button
+      type={type}
       onClick={onClick}
       className={`flex items-center gap-4 bg-white p-2 pl-5 w-fit rounded-full rounded-se-none shadow-lg group ${className}`}
     >

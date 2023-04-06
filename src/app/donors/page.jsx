@@ -1,9 +1,8 @@
-import React from "react";
 import DonorsList from "@/components/section/DonorsList";
 
 function DonorsPage() {
   return (
-    <main className="container pt-24">
+    <main className="">
       <DonorsList />
     </main>
   );

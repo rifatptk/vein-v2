@@ -2,6 +2,7 @@
 import { useQuery } from "@tanstack/react-query";
 import DataTable from "../tables/DataTable";
 import { getData } from "@/fetchers";
+import { donorsListCols } from "@/constants";
 
 function DonorsList() {
   const { isLoading, data, isError } = useQuery({
@@ -9,19 +10,16 @@ function DonorsList() {
     queryFn: () => getData("/users"),
   });
 
-  const cols = [
-    { id: 1, header: "Donor" },
-    { id: 2, header: "Blood group" },
-    { id: 3, header: "Address" },
-    { id: 4, header: "Phone" },
-    { id: 5, header: <span className="sr-only">Action</span> },
-  ];
   return (
-    <section>
+    <section className="container pt-24">
       <h1 className="mb-5">
         Donors are real life <span className="text-red-500">Heros!</span>
       </h1>
-      <DataTable cols={cols} data={data?.users} isLoading={isLoading} />
+      <DataTable
+        cols={donorsListCols}
+        data={data?.users}
+        isLoading={isLoading}
+      />
     </section>
   );
 }
