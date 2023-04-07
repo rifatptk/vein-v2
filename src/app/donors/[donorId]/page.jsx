@@ -26,9 +26,9 @@ function DonorDetail({ params }) {
         </h3>
 
         <div className="my-5 py-5">
-          <div className="md:flex no-wrap gap-4 ">
+          <div className="md:flex no-wrap gap-4">
             {/* Left Side */}
-            <div className="w-full md:w-3/12 md:mx-2 border">
+            <div className="w-full md:w-3/12 border">
               {/* Profile Card */}
               <div className="bg-white p-3 border-t-4 border-red-500">
                 <div className="image relative">
@@ -142,7 +142,7 @@ function DonorDetail({ params }) {
                 </div>
               </div>
               {/* End of about section */}
-              <div className="h-[380px] w-full ring ring-red-300">
+              <div className="h-[370px] w-full ring ring-red-300">
                 <Rimap
                   isMarkerShown={true}
                   centerPosition={{
