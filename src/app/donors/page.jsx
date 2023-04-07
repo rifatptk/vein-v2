@@ -2,7 +2,7 @@ import DonorsList from "@/components/section/DonorsList";
 
 function DonorsPage() {
   return (
-    <main className="">
+    <main>
       <DonorsList />
     </main>
   );

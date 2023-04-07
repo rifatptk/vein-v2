@@ -75,7 +75,6 @@ function SignupPage() {
       <form className="grid md:grid-cols-2 gap-8 mt-8" onSubmit={handleSubmit}>
         <Input
           as="input"
-          type="text"
           label="First name"
           name="firstName"
           placeHolder="John"
@@ -87,7 +86,6 @@ function SignupPage() {
         />
         <Input
           as="input"
-          type="text"
           label="Last name"
           name="lastName"
           placeHolder="Doe"
@@ -111,7 +109,6 @@ function SignupPage() {
         />
         <Input
           as="input"
-          type="text"
           label="Blood Group"
           name="bloodGroup"
           placeHolder="e.g. AB+"

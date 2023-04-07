@@ -7,7 +7,7 @@ import { useState } from "react";
 function Navbar() {
   const [isMobileNavShown, setIsMobileNavShown] = useState(false);
   return (
-    <nav className="fixed w-full px-2 z-50 top-2 left-1/2 -translate-x-1/2">
+    <nav className="fixed w-screen px-2 z-50 top-2 left-0 md:left-1/2 md:-translate-x-1/2">
       <div className="container flex justify-between items-center gap-2 shadow-xl border px-4 py-3 pr-8 rounded-full  backdrop-blur-md">
         {/* logo */}
         <div className="flex items-center gap-2 -mt-1">
@@ -29,12 +29,12 @@ function Navbar() {
 
         <button
           onClick={() => setIsMobileNavShown(!isMobileNavShown)}
-          className="block md:hidden p-4 rounded-full bg-red-500 ring ring-red-500/50"
-        ></button>
+          className="block md:hidden p-2 rounded-full bg-red-500 ring-[6px] ring-red-500/50 "
+        />
 
         {/* mobileNav */}
         {isMobileNavShown && (
-          <ul className="md:hidden fixed right-5 top-16 px-4 py-2 border rounded backdrop-blur-md">
+          <ul className="md:hidden w-full fixed z-50 right-0 top-16 px-4 py-2 border rounded bg-white shadow-lg">
             {navbarLinks.map((link) => (
               <Navlink key={link.id} {...link} />
             ))}
