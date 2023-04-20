@@ -76,9 +76,9 @@ function DataTable({ cols, data = [], isLoading }) {
 
         {/* mobile view */}
         <table className="block md:hidden">
-          <tbody className="space-y-1">
+          <div className="space-y-1 ">
             {data.map((user) => (
-              <tr
+              <div
                 key={user.id}
                 className="flex justify-between items-center gap-4 p-3 border rounded"
               >
@@ -121,9 +121,9 @@ function DataTable({ cols, data = [], isLoading }) {
                 >
                   View
                 </Link>
-              </tr>
+              </div>
             ))}
-          </tbody>
+          </div>
         </table>
       </div>
     </>
