@@ -6,8 +6,8 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "robohash.org",
+        protocol: 'https',
+        hostname: 'dummyjson.com',
         // port: "",
         // pathname: "/**",
       },
